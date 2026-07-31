@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
+      <View style={styles.box}></View>
     </View>
   );
 }
@@ -17,4 +18,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  box: {
+    width: 300,
+    height: 100,
+    backgroundColor: 'red',
+  }
 });
