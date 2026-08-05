@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import AntDesign from '@expo/vector-icons/AntDesign';
+import { Link } from 'expo-router';
 
 export default function App() {
   return (
@@ -12,6 +14,9 @@ export default function App() {
           }}
         />
         <Text style={styles.textLogo}>APP Legal</Text>
+        <Link style={styles.iconUser} href="/contact">
+          <AntDesign name="user-add" size={24} color="black" />
+        </Link>
       </View>
       <View style={styles.box2}>
       {/* //criar um card de usuário com avatar, nome e email */}
@@ -105,5 +110,8 @@ const styles = StyleSheet.create({
   userEmail: {
     fontSize: 14,
     color: '#666',
-  }
+  },
+  iconUser: {
+    marginLeft: 'auto',
+  },
 });
