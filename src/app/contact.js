@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
   return (
@@ -12,6 +13,8 @@ export default function App() {
           }}
         />
         <Text style={styles.textLogo}>APP Legal</Text>
+        <link style={styles.iconUser}></link>
+        <Ionicons name="home-outline" size={24} color="black" />
       </View>
       <View style={styles.box2}>
       {/* //criar um card de usuário com avatar, nome e email */}
